@@ -5,7 +5,7 @@ GO
 
 IF NOT EXISTS(SELECT 1 FROM tblControls WHERE FieldName = N'Vulnerability')
 INSERT INTO tblControls(FieldName, Adjustibility, Usage)
-VALUES(N'Vulnerability', N'O', N'Insuree')
+VALUES(N'Vulnerability', N'O', N'Insuree, Family')
 GO
 
 DROP PROCEDURE [dbo].[uspImportOffLineExtract4]
